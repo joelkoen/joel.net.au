@@ -1,0 +1,51 @@
+---
+import "../fonts.css";
+
+import Item from "../components/Item.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#000" />
+
+    <title>Joel Koen</title>
+    <link rel="canonical" href="https://joel.net.au/" />
+  </head>
+  <body
+    class="font-mono bg-black text-green-400 selection:bg-green-400 selection:text-black"
+  >
+    <main class="mt-20 mx-auto max-w-lg p-8">
+      <h1
+        class="text-5xl font-bold italic bg-clip-text text-transparent bg-gradient-to-br from-green-400 to-green-500"
+      >
+        JOEL KOEN
+      </h1>
+      <ul class="mt-6 mb-8">
+        <Item
+          name="Email"
+          text="hello@joel.net.au"
+          href="mailto:hello@joel.net.au"
+        />
+        <Item
+          name="GitHub"
+          text="@joelkoen"
+          href="https://github.com/joelkoen"
+        />
+      </ul>
+      <h2 class="mt-6 text-2xl font-bold uppercase italic">Projects</h2>
+      <ul class="mt-2">
+        <li class="mb-2 flex items-center flex-wrap">
+          <span class="text-lg font-bold uppercase">Price Shark</span>
+          <span class="my-1 ml-6 text-green-400/75 italic">to be published</span
+          >
+          <p class="my-1 ml-6 font-sans">
+            Australia-wide grocery discount tracker and product comparison tool
+          </p>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

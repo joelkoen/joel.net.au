@@ -1,0 +1,11 @@
+---
+const { name, text, href } = Astro.props;
+---
+
+<li class="mb-2 flex items-center gap-4">
+  <span class="pt-1 text-lg font-bold uppercase">{name}</span>
+  <a
+    class="underline text-lg italic hover:text-zinc-950 hover:bg-green-400 px-2 transition shadow-lg hover:shadow-green-400/20"
+    {href}>{text}</a
+  >
+</li>

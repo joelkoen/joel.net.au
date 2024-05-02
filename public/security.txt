@@ -1,0 +1,5 @@
+Contact: mailto:security@joelkoen.com
+Encryption: https://joel.net.au/age-key.txt
+
+Preferred-Languages: en
+Canonical: https://joel.net.au/security.txt
